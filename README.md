@@ -1,18 +1,33 @@
-# Charlesberret Tap
+# charlesberret/tap
 
-## How do I install these formulae?
+Homebrew formulae for tools I build and maintain.
 
-`brew install charlesberret/tap/<formula>`
+## Formulae
 
-Or `brew tap charlesberret/tap` and then `brew install <formula>`.
+| Formula | What it is |
+|---|---|
+| `cowbell` | Picks a coding agent for the directory you are in: one already running, a session to resume, or a new one. Runs in any terminal. |
 
-Or, in a `brew bundle` `Brewfile`:
+## Install
+
+```sh
+brew install charlesberret/tap/cowbell
+```
+
+Or tap once and install by bare name:
+
+```sh
+brew tap charlesberret/tap
+brew install cowbell
+```
+
+Or in a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "charlesberret/tap"
-brew "<formula>"
+brew "cowbell"
 ```
 
-## Documentation
+## Notes
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Formulae here build from published release artifacts, not from working trees. Each formula states its own license.
